@@ -1,0 +1,36 @@
+{
+  "name": "js-common-utils",
+  "version": "1.0.0",
+  "description": "端通用工具函数",
+  "main": "main.js",
+  "scripts": {
+    "test": "mocha",
+    "mocha": "node node_modules/mocha/bin/mocha --require @babel/register --reporter mochawesome"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gintangible/js-common-utils.git"
+  },
+  "author": "gintangible",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Gintangible/js-common-utils/issues"
+  },
+  "homepage": "https://github.com/Gintangible/js-common-utils#readme",
+  "dependencies": {
+    "dayjs": "^1.10.4",
+    "kind-of": "^6.0.3",
+    "query-string": "^6.13.8"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "@babel/register": "^7.12.10",
+    "@vue/test-utils": "^1.1.3",
+    "mocha": "^8.2.1",
+    "mochawesome": "^6.2.1",
+    "must": "^0.13.4",
+    "vue": "^2.6.12",
+    "vue-template-compiler": "^2.6.12"
+  }
+}
