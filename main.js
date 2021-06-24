@@ -1,3 +1,5 @@
+import arraySplit from './src/array-split';
+
 import clone from './src/clone';
 import cloneVue from './src/clone-vue';
 
@@ -34,6 +36,8 @@ export * as urlUtils from './src/url-utils';
 export { addSearchParams, getHash, getParsedSearch, getSearchParam, getSearch, normalizeUrl, removeSearchParam } from './src/url-utils';
 
 export {
+  arraySplit,
+
   clone,
   cloneVue,
 
