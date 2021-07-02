@@ -1,8 +1,8 @@
 {
   "name": "js-common-utils",
   "version": "1.0.0",
-  "description": "端通用工具函数",
-  "main": "main.js",
+  "description": "前端通用工具函数",
+  "main": "./src/index.js",
   "scripts": {
     "test": "mocha",
     "mocha": "node node_modules/mocha/bin/mocha --require @babel/register --reporter mochawesome"
