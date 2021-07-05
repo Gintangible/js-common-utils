@@ -2,8 +2,9 @@
   "name": "js-common-utils",
   "version": "1.0.0",
   "description": "前端通用工具函数",
-  "main": "./src/index.js",
+  "main": "./lib/index.js",
   "scripts": {
+    "babel": "babel src --out-dir lib",
     "test": "mocha",
     "mocha": "node node_modules/mocha/bin/mocha --require @babel/register --reporter mochawesome"
   },
@@ -23,6 +24,7 @@
     "query-string": "^6.13.8"
   },
   "devDependencies": {
+    "@babel/cli": "^7.14.5",
     "@babel/core": "^7.12.10",
     "@babel/preset-env": "^7.12.11",
     "@babel/register": "^7.12.10",
