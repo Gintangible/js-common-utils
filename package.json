@@ -1,0 +1,60 @@
+{
+  "name": "@gintangible/util",
+  "version": "1.0.0",
+  "description": "前端通用工具函数",
+  "main": "guxw-util.cjs.js",
+  "module": "guxw-util.esm.js",
+  "browser": "guxw-util.js",
+  "scripts": {
+    "prepare": "node build/prepare && rollup -c && yarn mocha",
+    "compile": "yarn prepare && yarn minify",
+    "build": "yarn compile && node build/update && node build/pkg",
+    "minify": "node build/minify",
+    "lint": "eslint --ext .js ./src",
+    "mocha": "mocha",
+    "mocha:report": "node node_modules/mocha/bin/mocha --reporter mochawesome",
+    "deploy": "yarn build && cd lib && npm publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gintangible/js-common-utils.git"
+  },
+  "author": "gintangible@163.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Gintangible/js-common-utils/issues"
+  },
+  "homepage": "https://github.com/Gintangible/js-common-utils#readme",
+  "dependencies": {
+    "dayjs": "^1.10.4",
+    "kind-of": "^6.0.3",
+    "query-string": "^6.13.8"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.14.5",
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "@babel/register": "^7.12.10",
+    "@rollup/plugin-babel": "^5.3.0",
+    "@rollup/plugin-commonjs": "^20.0.0",
+    "@rollup/plugin-node-resolve": "^13.0.4",
+    "@semantic-release/changelog": "^6.0.1",
+    "@semantic-release/git": "^10.0.1",
+    "@vue/test-utils": "^1.1.3",
+    "esm": "^3.2.25",
+    "jsdom": "18.0.1",
+    "jsdom-global": "3.0.2",
+    "mocha": "^8.2.1",
+    "mochawesome": "^6.2.1",
+    "must": "^0.13.4",
+    "rollup": "^2.56.3",
+    "rollup-plugin-filesize": "^9.1.1",
+    "rollup-plugin-local-resolve": "^1.0.7",
+    "rollup-plugin-node-builtins": "^2.1.2",
+    "rollup-plugin-node-globals": "^1.4.0",
+    "semantic-release": "^18.0.0",
+    "terser": "^5.9.0",
+    "vue": "^2.6.12",
+    "vue-template-compiler": "^2.6.12"
+  }
+}

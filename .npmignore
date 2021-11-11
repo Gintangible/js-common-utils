@@ -1,0 +1,13 @@
+node_modules/**
+
+build/
+src/**
+tmp/**
+test/**
+lib/**
+
+rollup.config.js
+*.test.js
+
+.babelrc
+.mocharc.json
