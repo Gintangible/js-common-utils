@@ -6,7 +6,7 @@ export default function clone(obj, hash = new WeakMap()) {
     return hash.get(obj);
   }
   let tempobj;
-  const constructor = obj.constructor;
+  const { constructor } = obj;
   switch (constructor) {
     case RegExp:
       tempobj = new constructor(obj);

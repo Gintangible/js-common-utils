@@ -7,5 +7,5 @@ export default function arrayFindByValue(array, value, key = 'key') {
     console.error(`${array} is not an array`);
     return;
   }
-  return array.find(item => item[key] === value);
+  return array.find((item) => item[key] === value);
 }

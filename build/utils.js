@@ -27,10 +27,10 @@ function createEmptyDir(path) {
         fs.unlinkSync(curPath);
       }
     });
-    console.log("clear tmp success.");
+    console.log(`clear ${path} success.`);
   } else {
     fs.mkdirSync(path);
-    console.log("create tmp dir success.");
+    console.log(`create ${path} dir success.`);
   }
 };
 

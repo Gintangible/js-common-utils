@@ -1,4 +1,3 @@
-
 /**
  * 获取当前地址的hash.
  *
@@ -11,9 +10,9 @@ export default function getHash(url) {
   } else if (!(url instanceof URL)) {
     url = new URL(url);
   }
-  let hash = url.hash;
+  let { hash } = url;
   if (hash.length === 0) {
-    const href = url.href;
+    const { href } = url;
     if (href.length > 0 && href.charAt(href.length - 1) === '#') {
       return '';
     }

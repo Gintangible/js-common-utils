@@ -1,7 +1,7 @@
 /**
  * 动态载入JavaScript脚本。
  */
-export default function loadScript(src, attrs = {}, parentNode) {
+export default function loadScript(src, attrs = {}, parentNode = document.head) {
   return new Promise((resolve, reject) => {
     const script = document.createElement('script');
     script.async = true;
@@ -19,7 +19,7 @@ export default function loadScript(src, attrs = {}, parentNode) {
       script.onload = null;
       reject(new Error(`Failed to load ${src}`));
     };
-    const node = parentNode || document.head || document.getElementsByTagName('head')[0];
+    const node = parentNode || document.getElementsByTagName('head')[0];
     node.appendChild(script);
   });
 }

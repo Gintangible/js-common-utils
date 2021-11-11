@@ -27,7 +27,7 @@ class Logger {
 
   // 获取指定日志级别对应的 console 的输出函数
   _getOutput(level) {
-    switch(level) {
+    switch (level) {
       case 'DEBUG':
         return console.debug;
       case 'INFO':
@@ -63,4 +63,4 @@ const logger = new Logger();
 export {
   Logger,
   logger as default,
-}
+};

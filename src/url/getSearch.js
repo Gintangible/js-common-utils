@@ -11,14 +11,14 @@ export default function getSearch(url) {
   } else if (!(url instanceof URL)) {
     url = new URL(url);
   }
-  const search = url.search;
+  const { search } = url;
   let result = null;
   if (search) {
     // 去除开头的 ?
     result = search.substring(1);
   }
   // 从 hash 中获取参数
-  const hash = url.hash;
+  const { hash } = url;
   const pos = hash.indexOf('?');
   if (pos > -1) {
     result = (result ? `${result}&` : '') + hash.substring(pos + 1);

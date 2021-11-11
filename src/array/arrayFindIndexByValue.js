@@ -7,5 +7,5 @@ export default function arrayFindIndexByValue(array, value, key = 'key') {
     console.error(`${array} is not an array`);
     return;
   }
-  return array.findIndex(item => item[key] === value);
+  return array.findIndex((item) => item[key] === value);
 }

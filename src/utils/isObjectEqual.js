@@ -11,8 +11,8 @@ export default function isObjectEqual(a = {}, b = {}) {
     return false;
   }
   return aKeys.every((key) => {
-    var aVal = a[key];
-    var bVal = b[key];
+    const aVal = a[key];
+    const bVal = b[key];
     // check nested equality
     if (typeof aVal === 'object' && typeof bVal === 'object') {
       return isObjectEqual(aVal, bVal);

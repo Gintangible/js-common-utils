@@ -6,10 +6,10 @@ export default function arraySplit(array, size = 3) {
     console.error(`${array} is not an array`);
     return;
   }
-  let newArray = [];
+  const newArray = [];
   const len = Math.ceil(array.length / size);
   for (let i = 0; i < len; i++) {
-    let temp = array.slice(i * n, i * n + n);
+    let temp = array.slice(i * size, i * size + size);
     if (typeof temp === 'object') {
       temp = clone(temp);
     }
