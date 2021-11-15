@@ -18,7 +18,3 @@ folderList.forEach((file, i) => {
     fs.copyFileSync(`${fromPath}/${file}`, `${toPath}/${file}`);
   })
 })
-
-// 用gxw-util.esm.js 生成index.js
-// cloneFile(path.resolve(fromPath, 'guxw-util.esm.js'), path.resolve(toPath, 'index.js'));
-fs.copyFileSync(`${fromPath}/guxw-util.esm.js`, `${toPath}/index.js`);

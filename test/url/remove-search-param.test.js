@@ -1,6 +1,6 @@
 import expect from 'must';
 import queryString from 'query-string';
-import { getSearch, removeSearchParam } from '../../tmp/guxw-util';
+import { getSearch, removeSearchParam } from '../../lib';
 
 /**
  * 单元测试 'removeSearchParam'

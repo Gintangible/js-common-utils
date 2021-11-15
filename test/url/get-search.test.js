@@ -1,5 +1,5 @@
 import expect from 'must';
-import { getSearch } from '../../tmp/guxw-util';
+import { getSearch } from '../../lib';
 /**
  * 单元测试 'getSearch'
  *

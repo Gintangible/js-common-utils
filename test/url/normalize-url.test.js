@@ -1,6 +1,6 @@
 import expect from 'must';
 import queryString from 'query-string';
-import { getSearch, normalizeUrl } from '../../tmp/guxw-util';
+import { getSearch, normalizeUrl } from '../../lib';
 /**
  * 单元测试 'normalizeUrl'
  *

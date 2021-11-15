@@ -1,5 +1,5 @@
 import expect from 'must';
-import privacyMask from '../../tmp/privacyMask';
+import { privacyMask } from '../../lib';
 
 /**
  * 单元测试 'privacy-mask'

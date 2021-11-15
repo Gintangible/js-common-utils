@@ -1,5 +1,5 @@
 import expect from 'must';
-import { getHash } from '../../tmp/guxw-util';
+import { getHash } from '../../lib';
 
 /**
  * 单元测试 'getHash'

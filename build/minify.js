@@ -3,7 +3,7 @@ const path = require('path');
 const fs = require('fs');
 const rootPath = path.resolve(__dirname, '../');
 const mainPath = rootPath + '/tmp';
-const minifyFiles = ['guxw-util', 'guxw-util.fe'];
+const minifyFiles = ['index', 'index.fe'];
 // const minifyFiles = fs.readdirSync(path.resolve(rootPath, mainPath));
 
 console.log(`minify mainPath: ${mainPath}`);

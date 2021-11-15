@@ -25,22 +25,22 @@ const plugins = [
 export default [
   // 1. 生成umd、iife、cjs
   {
-    input: `tmp/guxw-util.esm.js`,
+    input: `tmp/index.esm.js`,
     output: [{
-        file: `tmp/guxw-util.js`,
+        file: `tmp/index.js`,
         format: 'umd',
-        name: 'guxw',
+        name: 'index',
         // sourcemap: true
       },
       {
-        file: `tmp/guxw-util.fe.js`,
+        file: `tmp/index.fe.js`,
         format: 'iife',
-        name: 'guxw'
+        name: 'index'
       },
       {
-        file: `tmp/guxw-util.cjs.js`,
+        file: `tmp/index.cjs.js`,
         format: 'cjs',
-        name: 'guxw'
+        name: 'index'
       },
     ],
     plugins,

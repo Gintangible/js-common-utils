@@ -14,8 +14,8 @@ console.log(`rootPath: ${rootPath}`);
 createEmptyDir(toPath);
 
 // 将src下面的源码，拷贝到/tmp目录，
-// guxw-util.esm.js
-const mainFileName = 'guxw-util.esm.js';
+// index.esm.js
+const mainFileName = 'index.esm.js';
 const mainEsm = fs.createWriteStream(path.resolve(toPath, mainFileName));
 const fileNames = [];
 
