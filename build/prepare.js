@@ -82,4 +82,3 @@ mainEsm.write(`${os.EOL}export {
 }${os.EOL}`);
 
 mainEsm.end();
-

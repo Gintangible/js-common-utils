@@ -3,7 +3,7 @@ const path = require('path');
 const rootPath = path.resolve(__dirname, '../');
 const toPath = rootPath + '/lib';
 const COPY_FILES = ['README.md'];
-const npmMain = ['main', 'module', 'browser'];
+const npmMain = ['main'];
 
 // 将pkg.json、readem等npm包需要的信息 导入到lib中
 function pkgExport() {

@@ -32,16 +32,6 @@ export default [
         name: 'index',
         // sourcemap: true
       },
-      {
-        file: `tmp/index.fe.js`,
-        format: 'iife',
-        name: 'index'
-      },
-      {
-        file: `tmp/index.cjs.js`,
-        format: 'cjs',
-        name: 'index'
-      },
     ],
     plugins,
   },

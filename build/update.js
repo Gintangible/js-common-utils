@@ -14,7 +14,6 @@ const folderList = fs.readdirSync(path.resolve(rootPath, 'tmp'));
 folderList.forEach((file, i) => {
   fs.stat(path.resolve(fromPath, file), function (err, stat) {
     console.log(` ${i} ${"\033[32m"} ${file} ${"\033[39m"}`);
-    // cloneFile(path.resolve(fromPath, file), path.resolve(toPath, file));
     fs.copyFileSync(`${fromPath}/${file}`, `${toPath}/${file}`);
   })
 })
